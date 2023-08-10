@@ -1,31 +1,38 @@
 
-Activity:
+#Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
-
+foods = { "apples": 23, "grapes": 507, "eggs": 48 }
+p foods
+puts
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods.keys
+puts 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
-
+p foods.values
+puts
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
 
+p foods[:grapes]
+
+puts
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
 
-
+foods[:strawberries] = 4
+p foods
+puts
 #-------------------
 # Part 2: Email
 #-------------------
@@ -39,15 +46,25 @@ p zoo
 
 # Write code that prints your email hash to the terminal.
 
-
+gmail = {
+  "sender": "Turing",
+  "email address": "email@turing.edu", 
+  "subject": "Turing Information",
+  "sent date": "8/9/2023",
+  "sent time": "9:00PM"
+}
+puts
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
 # YOUR CODE HERE
 
+p gmail.keys
+puts
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
 # YOUR CODE HERE
-
+p gmail.values
+puts
 
 #-------------------
 # Part 3: Many Emails - CHALLENGE!
@@ -97,3 +114,29 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+puts
+emails = [
+  {
+  sender: "Turing",
+  email_address: "email@turing.edu", 
+  subject: "Turing Information",
+  sent_date: "8/9/2023",
+  sent_time: "9:00PM"
+  },
+  {
+  sender: "REI",
+  email_address: "customer_service@rei.com", 
+  subject: "Return Information",
+  sent_date: "8/9/2023",
+  sent_time: "10:00PM"
+  },
+  {
+  sender: "Wells Fargo",
+  email_address: "customer_service@wellsfargo.com", 
+  subject: "Bank Information",
+  sent_date: "8/9/2023",
+  sent_time: "10:30PM"
+  }
+]
+p emails
